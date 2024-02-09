@@ -27,7 +27,10 @@ struct LaunchView: View {
                 .frame(width: 100, height: 100)
             ZStack {
                 if showLoadingText {
-                    ProgressView()
+                    HStack {
+                        ProgressView()
+                    }
+                    .transition(AnyTransition.scale.animation(.easeIn))
                 }
             }
             .offset(y: 70)

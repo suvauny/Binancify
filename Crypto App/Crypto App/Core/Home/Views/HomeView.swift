@@ -105,6 +105,7 @@ struct HomeView: View {
                             .padding(.bottom)
                     }
                     HomeStatsView(showPortfolio: $showPortFolio)
+                        .padding(.bottom, 10)
                     if showSearchBar {
                         SearchBarView(searchText: $vm.searchText)
                     }
